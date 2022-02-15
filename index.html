@@ -10,7 +10,9 @@
 </head>
 <body>
     <div class="container">
+         <div class="weather-app-wrapper">
         <div class="weather-app">
+            <div class="overview">
     <h1>
         New York
     </h1>
@@ -22,30 +24,34 @@
             Sunny
         </li>
     </ul>
+</div>
     <div class="row">
         <div class="col-6">
-            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Sunny">
-            29°F |°C
+            <div class="clearfix weather-temperature">
+            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Sunny" class="float-left"/>
+            <strong>29</strong><span class="units">°F |  <a href="#">°C </a> </span>
+    </div>  
         </div>
         <div class="col-6">
             <ul>
                 <li>
-                    Precipitation 0%
+                    Precipitation: 0%
                 </li>
                 <li>
-                    Humidity 29%
+                    Humidity: 29%
                 </li>
                 <li>
-                    Wind 9mph
+                    Wind: 9mph
                 </li>
             </ul>
         </div>
     </div> 
-    <small>
+    
+    </div>
+   <small>
        <a href="https://github.com/bachristie/vanilla-weather-app" target="_blank"> Open-source code </a>by Bernice Alexander-Christie 
     </small>
     </div>
-   
 </div>
     <script src="src/app.js"></script>
 </body>
